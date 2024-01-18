@@ -1,5 +1,5 @@
 class X1 < Formula
-  desc "X1 blockchain protocol secured by the Lachesis consensus algorithm"
+  desc "A blockchain with a protocol secured by the Lachesis consensus algorithm"
   homepage "https://xen.network"
   license "LGPL-3.0"
   url "https://github.com/FairCrypto/go-x1/archive/refs/tags/v0.9.0-4.tar.gz"
@@ -22,10 +22,14 @@ class X1 < Formula
     mkdir_p "#{etc}/x1"
     etc.install "system/etc/x1/config.toml" => "x1/config.toml"
     mkdir_p "#{share}/x1/configs/testnet"
-    share.install "system/usr/share/x1/configs/testnet/api-node.toml" => "x1/configs/testnet/api-node.toml"
-    share.install "system/usr/share/x1/configs/testnet/full-node.toml" => "x1/configs/testnet/full-node.toml"
-    share.install "system/usr/share/x1/configs/testnet/archive-node.toml" => "x1/configs/testnet/archive-node.toml"
-    share.install "system/usr/share/x1/configs/testnet/validator-node.toml" => "x1/configs/testnet/validator-node.toml"
+    share.install "system/usr/share/x1/configs/testnet/api-node.toml" =>
+                    "x1/configs/testnet/api-node.toml"
+    share.install "system/usr/share/x1/configs/testnet/full-node.toml" =>
+                    "x1/configs/testnet/full-node.toml"
+    share.install "system/usr/share/x1/configs/testnet/archive-node.toml" =>
+                    "x1/configs/testnet/archive-node.toml"
+    share.install "system/usr/share/x1/configs/testnet/validator-node.toml" =>
+                    "x1/configs/testnet/validator-node.toml"
   end
 
   test do
