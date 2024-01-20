@@ -1,8 +1,8 @@
 class X1 < Formula
   desc "Official Go implementation of the X1 protocol"
   homepage "https://xen.network"
-  url "https://github.com/FairCrypto/go-x1/archive/refs/tags/v0.9.0-4.tar.gz"
-  sha256 "ca4e1332035c6b19f3f8c2eaec0b197462a5e7a4c1768e345b31378f18ca9022"
+  url "https://github.com/FairCrypto/go-x1/archive/refs/tags/v1.1.3-rc.6.tar.gz"
+  sha256 "ef95cb17d46230bd1aeab80a9a3eba45081c29f74a0902f253ed980723478b8a"
   license "LGPL-3.0"
 
   depends_on "go" => :build
